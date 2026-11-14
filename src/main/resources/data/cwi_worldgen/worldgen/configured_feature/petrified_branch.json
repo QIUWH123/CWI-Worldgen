@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:random_boolean_selector",
+  "config": {
+    "feature_false": {
+      "feature": "cwi_worldgen:long_petrified_branch",
+      "placement": []
+    },
+    "feature_true": {
+      "feature": "cwi_worldgen:short_petrified_branch",
+      "placement": []
+    }
+  }
+}

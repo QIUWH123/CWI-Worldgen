@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cwi_worldgen:block/crystal_melon"
+    }
+  }
+}

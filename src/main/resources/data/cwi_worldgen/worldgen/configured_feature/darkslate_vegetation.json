@@ -1,0 +1,24 @@
+{
+  "type": "cwi_worldgen:random_floor_placement",
+  "config": {
+    "placement_count": 1,
+    "state_provider": {
+      "entries": [
+        {
+          "data": {
+            "Name": "cwi_worldgen:scorched_remains"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    "tries": 10,
+    "valid_floor_blocks": "kubejs:darkslate",
+    "xz_radius": 4,
+    "y_height": 2,
+    "height_bounds": {
+      "min_y": -60,
+      "max_y": -8
+    }
+  }
+}

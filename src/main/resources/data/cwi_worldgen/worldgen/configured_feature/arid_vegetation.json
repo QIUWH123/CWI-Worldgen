@@ -1,0 +1,30 @@
+{
+  "type": "cwi_worldgen:random_floor_placement",
+  "config": {
+    "placement_count": 7,
+    "state_provider": {
+      "entries": [
+        {
+          "data": {
+            "Name": "cwi_worldgen:dry_sprouts"
+          },
+          "weight": 1
+        },
+        {
+          "data": {
+            "Name": "minecraft:air"
+          },
+          "weight": 2
+        }
+      ]
+    },
+    "tries": 15,
+    "valid_floor_blocks": [
+      "kubejs:quartzite",
+      "kubejs:conglomerate",
+      "minecraft:packed_mud"
+    ],
+    "xz_radius": 4,
+    "y_height": 3
+  }
+}

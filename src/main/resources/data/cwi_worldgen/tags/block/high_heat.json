@@ -1,0 +1,10 @@
+{
+  "values": [
+    {
+      "id": "darkerdepths:scorcher_light_block",
+      "required": false
+    },
+    "minecraft:magma_block",
+    "minecraft:lava_cauldron"
+  ]
+}

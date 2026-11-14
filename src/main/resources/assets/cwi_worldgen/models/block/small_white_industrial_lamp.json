@@ -1,0 +1,7 @@
+{
+  "parent": "cwi_worldgen:block/small_industrial_lamp",
+  "textures": {
+    "0": "cwi_worldgen:block/lamp/small_white_industrial_lamp"
+  },
+  "render_type": "minecraft:cutout"
+}

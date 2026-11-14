@@ -1,0 +1,42 @@
+{
+  "type": "cwi_worldgen:biome_cave",
+  "config": {
+    "biome": "cwi:deep_ocean",
+    "settings": {
+      "probability": 0.054,
+      "y": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": -56
+        },
+        "max_inclusive": {
+          "absolute": 24
+        }
+      },
+      "yScale": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 0.1,
+        "max_exclusive": 0.8
+      },
+      "lava_level": {
+        "above_bottom": 8
+      },
+      "replaceable": "#minecraft:overworld_carver_replaceables",
+      "horizontal_radius_multiplier": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 0.7,
+        "max_exclusive": 1.2
+      },
+      "vertical_radius_multiplier": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 0.8,
+        "max_exclusive": 1.2
+      },
+      "floor_level": {
+        "type": "minecraft:uniform",
+        "min_inclusive": -1.0,
+        "max_exclusive": -0.4
+      }
+    }
+  }
+}

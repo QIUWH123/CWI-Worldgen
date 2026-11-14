@@ -1,0 +1,10 @@
+{
+  "parent": "cwi_worldgen:block/cube_unique_top_bottom",
+  "textures": {
+    "bottom": "cwi_worldgen:block/stone_melon_bottom",
+    "side": "cwi_worldgen:block/stone_melon",
+    "top": "cwi_worldgen:block/stone_melon_top",
+    "particle": "cwi_worldgen:block/stone_melon"
+  },
+  "render_type": "minecraft:cutout"
+}

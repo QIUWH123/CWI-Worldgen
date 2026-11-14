@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "cwi:forsaken_land",
+    "cwi:smoldering_barren",
+    "cwi:deep_ocean"
+  ],
+  "features": "cwi:waterbed_sediments",
+  "step": "raw_generation"
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "kubejs:quartzite",
+    "kubejs:conglomerate",
+    "minecraft:packed_mud",
+    "#minecraft:stone_ore_replaceables",
+    "#minecraft:deepslate_ore_replaceables"
+  ]
+}

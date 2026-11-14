@@ -1,0 +1,159 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "cwi_worldgen:natural_geometry_overworld",
+    "biome_source": {
+      "type": "cwi_worldgen:bounded_caves",
+      "generation_version": 8,
+      "surface_source": {
+        "type": "minecraft:multi_noise",
+        "biomes": [
+          {
+            "biome": "cwi:forsaken_land",
+            "parameters": {
+              "temperature": [
+                -1,
+                0.25
+              ],
+              "humidity": [
+                -1,
+                1
+              ],
+              "continentalness": [
+                -0.42,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "weirdness": [
+                -1,
+                1
+              ],
+              "depth": [
+                -0.15,
+                0.15
+              ],
+              "offset": 0
+            }
+          },
+          {
+            "biome": "cwi:smoldering_barren",
+            "parameters": {
+              "temperature": [
+                0.25,
+                1
+              ],
+              "humidity": [
+                -1,
+                1
+              ],
+              "continentalness": [
+                -0.42,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "weirdness": [
+                -1,
+                1
+              ],
+              "depth": [
+                -0.15,
+                0.15
+              ],
+              "offset": 0
+            }
+          },
+          {
+            "biome": "cwi:deep_ocean",
+            "parameters": {
+              "temperature": [
+                -1,
+                1
+              ],
+              "humidity": [
+                -1,
+                1
+              ],
+              "continentalness": [
+                -1.2,
+                -0.42
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "weirdness": [
+                -1,
+                1
+              ],
+              "depth": [
+                -0.15,
+                0.15
+              ],
+              "offset": 0
+            }
+          }
+        ]
+      },
+      "fallback_biome": "cwi:typical_caves",
+      "cave_ceiling": 48,
+      "cell_size": 448,
+      "regions": [
+        {
+          "biome": "cwi:sandy_caves",
+          "min_y": -12,
+          "max_y": 48,
+          "min_diameter": 96,
+          "max_diameter": 384,
+          "weight": 22
+        },
+        {
+          "biome": "cwi:glowshroom_caves",
+          "min_y": -32,
+          "max_y": 40,
+          "min_diameter": 96,
+          "max_diameter": 384,
+          "weight": 20
+        },
+        {
+          "biome": "cwi:dripstone_caves",
+          "min_y": -48,
+          "max_y": 32,
+          "min_diameter": 96,
+          "max_diameter": 384,
+          "weight": 22
+        },
+        {
+          "biome": "cwi:spider_caves",
+          "min_y": -40,
+          "max_y": 16,
+          "min_diameter": 64,
+          "max_diameter": 192,
+          "weight": 8
+        },
+        {
+          "biome": "cwi:molten_caves",
+          "min_y": -60,
+          "max_y": -8,
+          "min_diameter": 96,
+          "max_diameter": 384,
+          "weight": 20
+        },
+        {
+          "biome": "cwi:echo_caves",
+          "min_y": -60,
+          "max_y": -24,
+          "min_diameter": 64,
+          "max_diameter": 192,
+          "weight": 8
+        }
+      ]
+    }
+  }
+}

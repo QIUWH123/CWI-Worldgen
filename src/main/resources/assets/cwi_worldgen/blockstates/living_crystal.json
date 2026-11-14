@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "heat_level=0": {
+      "model": "cwi_worldgen:block/living_crystal"
+    },
+    "heat_level=1": {
+      "model": "cwi_worldgen:block/living_crystal_heat_1"
+    },
+    "heat_level=2": {
+      "model": "cwi_worldgen:block/living_crystal_heat_2"
+    },
+    "heat_level=3": {
+      "model": "cwi_worldgen:block/living_crystal_heat_2"
+    },
+    "heat_level=4": {
+      "model": "cwi_worldgen:block/living_crystal_heat_2"
+    }
+  }
+}

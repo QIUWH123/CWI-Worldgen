@@ -1,0 +1,21 @@
+{
+  "type": "cwi_worldgen:echo_crystal_spike",
+  "config": {
+    "cluster_state": {
+      "Name": "cwi_worldgen:echo_crystal",
+      "Properties": {
+        "facing": "up",
+        "waterlogged": "false"
+      }
+    },
+    "crystal_direction": "ceiling",
+    "crystal_state": {
+      "Name": "minecraft:sculk"
+    },
+    "xz_radius": {
+      "type": "minecraft:uniform",
+      "max_inclusive": 3,
+      "min_inclusive": 1
+    }
+  }
+}

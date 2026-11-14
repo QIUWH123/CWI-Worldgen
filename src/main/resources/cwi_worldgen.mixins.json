@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.quiwh.cwiworldgen.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "TerrainRandomStateMixin", "TerrainNoiseChunkMixin", "TerrainSurfaceSystemMixin",
+    "TerrainGenerationHeightMixin", "TerrainClimateSamplerMixin", "TerrainWorldCarverMixin",
+    "TerrainBoatMixin", "TerrainRiverGasketMixin", "TerrainGeneratorProfileMixin", "CurrentFishingHookMixin", "LegacyBurntTreeMixin",
+    "MultiNoiseBiomeSourceAccessor",
+    "StructureSearchChunkAccess", "StructureSearchStateAccess",
+    "StructureSearchManagerAccess", "StructureSearchPresenceAccess"
+  ],
+  "injectors": {"defaultRequire": 1}
+}

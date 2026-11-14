@@ -1,0 +1,55 @@
+{
+  "type": "cwi_worldgen:industrial_deposit",
+  "config": {
+    "replaceable": "minecraft:base_stone_overworld",
+    "radius_x": 7,
+    "radius_y": 12,
+    "radius_z": 7,
+    "ore_fraction": 0.028,
+    "surface_indicators": true,
+    "morphologies": [
+      "massive",
+      "bedded"
+    ],
+    "size_settings": {
+      "enabled": true,
+      "favored_biomes": [
+        "cwi:sandy_caves"
+      ]
+    },
+    "hosts": [
+      {
+        "state": {
+          "Name": "kubejs:chalcocite"
+        },
+        "weight": 4
+      },
+      {
+        "state": {
+          "Name": "kubejs:shale"
+        },
+        "weight": 2
+      },
+      {
+        "state": {
+          "Name": "minecraft:deepslate"
+        },
+        "weight": 2
+      },
+      {
+        "state": {
+          "Name": "create:limestone"
+        },
+        "weight": 2
+      }
+    ],
+    "ores": [
+      {
+        "state": {
+          "Name": "kubejs:chalcocite_deposit"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

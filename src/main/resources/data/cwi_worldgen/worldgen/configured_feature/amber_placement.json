@@ -1,0 +1,10 @@
+{
+  "type": "cwi_worldgen:gemstone",
+  "config": {
+    "palette": {
+      "amber_cluster": {
+        "Name": "cwi:amber_cluster"
+      }
+    }
+  }
+}

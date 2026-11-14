@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "cwi_worldgen:budding_echo",
+    "cwi_worldgen:crystal_melon",
+    "cwi_worldgen:echo_crystal",
+    "cwi_worldgen:echo_crystal_block",
+    "cwi_worldgen:large_echo_bud",
+    "cwi_worldgen:medium_echo_bud",
+    "cwi_worldgen:small_echo_bud"
+  ]
+}

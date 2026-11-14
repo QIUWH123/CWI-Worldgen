@@ -1,0 +1,21 @@
+{
+  "values": [
+    "kubejs:darkslate",
+    "minecraft:granite",
+    "minecraft:andesite",
+    "minecraft:stone",
+    "minecraft:diorite",
+    "minecraft:tuff",
+    "minecraft:calcite",
+    "minecraft:basalt",
+    "create:limestone",
+    "kubejs:claystone",
+    "kubejs:schist",
+    "kubejs:gneiss",
+    "kubejs:rhyolite",
+    "kubejs:shale",
+    "kubejs:conglomerate",
+    "kubejs:phyllite",
+    "kubejs:quartzite"
+  ]
+}

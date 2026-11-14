@@ -1,0 +1,25 @@
+{
+  "type": "cwi_worldgen:huge_glowshroom",
+  "config": {
+    "palette": {
+      "mossy_grimestone": {
+        "Name": "kubejs:mossy_phyllite"
+      },
+      "glowshroom": {
+        "Name": "cwi_worldgen:glowshroom"
+      },
+      "glowshroom_stem": {
+        "Name": "cwi_worldgen:glowshroom_stem"
+      },
+      "glowshroom_block": {
+        "Name": "cwi_worldgen:glowshroom_block"
+      },
+      "glimmering_vines": {
+        "Name": "cwi_worldgen:glimmering_vines"
+      },
+      "glowshroom_heart": {
+        "Name": "cwi_worldgen:glowshroom_heart"
+      }
+    }
+  }
+}

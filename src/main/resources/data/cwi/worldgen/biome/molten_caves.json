@@ -1,0 +1,125 @@
+{
+  "carvers": {
+    "air": [
+      "cwi:typical_caves",
+      "cwi:typical_caves_deep",
+      "cwi:typical_caves_ravine",
+      "cwi:sandy_caves",
+      "cwi:sandy_caves_deep",
+      "cwi:sandy_caves_ravine",
+      "cwi:glowshroom_caves",
+      "cwi:glowshroom_caves_deep",
+      "cwi:glowshroom_caves_ravine",
+      "cwi:dripstone_caves",
+      "cwi:dripstone_caves_deep",
+      "cwi:dripstone_caves_ravine",
+      "cwi:molten_caves",
+      "cwi:molten_caves_deep",
+      "cwi:molten_caves_ravine",
+      "cwi:echo_caves",
+      "cwi:echo_caves_deep",
+      "cwi:echo_caves_ravine",
+      "cwi:spider_caves",
+      "cwi:spider_caves_deep",
+      "cwi:spider_caves_ravine",
+      "cwi:deep_ocean",
+      "cwi:deep_ocean_deep",
+      "cwi:deep_ocean_ravine"
+    ]
+  },
+  "downfall": 0.5,
+  "effects": {
+    "fog_color": 12638463,
+    "grass_color": 5478752,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": false,
+      "sound": "minecraft:music.overworld.dripstone_caves"
+    },
+    "sky_color": 8103167,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "features": [
+    [],
+    [
+      "cwi:thermal/structures_lava_lake_granite_underground",
+      "cwi:thermal/structures_lava_lake_granite_surface",
+      "cwi:thermal/structures_lava_lake_basalt_underground",
+      "cwi:thermal/structures_lava_lake_basalt_surface",
+      "cwi:thermal/surfaces_molten_surface",
+      "cwi:thermal/stones_darkslate",
+      "cwi:thermal/stones_darkslate_2",
+      "cwi:thermal/stones_darkslate_3",
+      "cwi:thermal/large_molten_pillar",
+      "cwi:stones/eruptive_bedrock"
+    ],
+    [
+      "minecraft:amethyst_geode",
+      "cwi:thermal/molten_pool",
+      "cwi:thermal/molten_spring"
+    ],
+    [
+      "cwi:molten/underwater_magma",
+      "cwi:thermal/magma_ore",
+      "cwi:thermal/magma_disk",
+      "cwi:thermal/scorched_remains_pile",
+      "cwi:striated_ores/molten_caves/magnetite",
+      "cwi:striated_ores/molten_caves/chromite"
+    ],
+    [],
+    [],
+    [
+      "cwi:ores/zinc",
+      "cwi:ores/copper",
+      "cwi:ores/coal",
+      "cwi:ores/gold",
+      "cwi:ores/iron",
+      "cwi:ores/nickel",
+      "cwi:ores/lead",
+      "cwi:ores/lithium",
+      "cwi:ores/redstone",
+      "cwi:ores/lapis",
+      "cwi:ores/diamond",
+      "cwi:ores/quartz",
+      "cwi:ores/sulfur",
+      "cwi:ores/tin",
+      "cwi:ores/silver",
+      "cwi:ores/emerald",
+      "cwi:industrial/magnetite",
+      "cwi:industrial/chromite",
+      "cwi:industrial/pentlandite",
+      "cwi:industrial/sphalerite",
+      "cwi:industrial/sulfur"
+    ],
+    [],
+    [],
+    [
+      "cwi:thermal/darkslate_vegetation",
+      "cwi:thermal/structures_acidified_darkslate"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.5
+}

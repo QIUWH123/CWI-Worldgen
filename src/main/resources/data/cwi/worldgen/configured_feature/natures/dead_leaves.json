@@ -1,0 +1,12 @@
+{
+  "type": "cwi_worldgen:safe_deadwood",
+  "config": {
+    "state": {
+      "Name": "kubejs:dead_leaves"
+    },
+    "kind": "cover",
+    "min_size": 1,
+    "max_size": 3,
+    "fork": false
+  }
+}

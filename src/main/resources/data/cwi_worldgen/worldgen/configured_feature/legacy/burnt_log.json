@@ -1,0 +1,12 @@
+{
+  "type": "cwi_worldgen:safe_deadwood",
+  "config": {
+    "state": {
+      "Name": "kubejs:burnt_log"
+    },
+    "kind": "standing",
+    "min_size": 5,
+    "max_size": 7,
+    "fork": true
+  }
+}

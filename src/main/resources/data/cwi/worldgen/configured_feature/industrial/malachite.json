@@ -1,0 +1,55 @@
+{
+  "type": "cwi_worldgen:industrial_deposit",
+  "config": {
+    "replaceable": "minecraft:base_stone_overworld",
+    "radius_x": 7,
+    "radius_y": 12,
+    "radius_z": 7,
+    "ore_fraction": 0.028,
+    "surface_indicators": true,
+    "morphologies": [
+      "nodular",
+      "massive"
+    ],
+    "size_settings": {
+      "enabled": true,
+      "favored_biomes": [
+        "cwi:glowshroom_caves"
+      ]
+    },
+    "hosts": [
+      {
+        "state": {
+          "Name": "create:veridium"
+        },
+        "weight": 4
+      },
+      {
+        "state": {
+          "Name": "create:limestone"
+        },
+        "weight": 2
+      },
+      {
+        "state": {
+          "Name": "create:asurine"
+        },
+        "weight": 2
+      },
+      {
+        "state": {
+          "Name": "minecraft:tuff"
+        },
+        "weight": 2
+      }
+    ],
+    "ores": [
+      {
+        "state": {
+          "Name": "kubejs:malachite_deposit"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:dirt",
+    "kubejs:depleted_dirt",
+    "kubejs:ashen_depleted_dirt",
+    "minecraft:gravel",
+    "kubejs:claystone",
+    "kubejs:dark_ash_stone",
+    "kubejs:quartzite",
+    "kubejs:conglomerate",
+    "minecraft:stone",
+    "minecraft:deepslate"
+  ]
+}

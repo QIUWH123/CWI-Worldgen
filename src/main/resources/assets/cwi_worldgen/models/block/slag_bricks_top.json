@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "cwi_worldgen:block/slag_bricks",
+    "side": "cwi_worldgen:block/slag_bricks",
+    "top": "cwi_worldgen:block/slag_bricks"
+  },
+  "render_type": "minecraft:cutout"
+}

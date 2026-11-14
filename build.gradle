@@ -1,0 +1,125 @@
+plugins {
+    id 'java-library'
+    id 'idea'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+version = mod_version
+group = mod_group_id
+base { archivesName = mod_id }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+def verificationRunName = providers.gradleProperty('verificationRunDirectory').getOrElse('game-test-run')
+if (!(verificationRunName ==~ /[a-zA-Z0-9_-]+/)) {
+    throw new GradleException('verificationRunDirectory must be a simple directory name')
+}
+def verificationRunDirectory = file("build/${verificationRunName}")
+
+repositories { mavenCentral() }
+
+if (providers.gradleProperty('verifyPack').isPresent()) {
+    dependencies { runtimeOnly fileTree(dir: 'libs/verification', include: ['*.jar']) }
+}
+
+neoForge {
+    version = neoforge_version
+    addModdingDependenciesTo sourceSets.test
+
+    mods {
+        "${mod_id}" {
+            sourceSet sourceSets.main
+        }
+        cwi_worldgen_verification {
+            sourceSet sourceSets.main
+            sourceSet sourceSets.test
+        }
+    }
+
+    runs {
+        client {
+            client()
+            loadedMods = [mods.cwi_worldgen]
+            gameDirectory = file('build/client-run')
+        }
+        server {
+            server()
+            loadedMods = [mods.cwi_worldgen]
+            programArgument '--nogui'
+            gameDirectory = file('build/server-run')
+        }
+        gameTestServer {
+            type = 'gameTestServer'
+            sourceSet = sourceSets.test
+            loadedMods = [mods.cwi_worldgen_verification]
+            gameDirectory = verificationRunDirectory
+            programArgument '--world'
+            programArgument providers.gradleProperty('verificationWorld').getOrElse('cwi-worldgen-verification')
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+            if (providers.gradleProperty('verificationHeap').isPresent()) {
+                jvmArgument "-Xmx${providers.gradleProperty('verificationHeap').get()}"
+                jvmArgument '-XX:ActiveProcessorCount=4'
+            }
+            if (providers.gradleProperty('verificationDiagnostics').isPresent()) {
+                systemProperty 'cwi.worldgen.verifyDiagnostics', 'true'
+                programArgument '--pidFile'
+                programArgument new File(verificationRunDirectory, 'verification-server.pid').absolutePath
+            }
+        }
+    }
+
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 21
+    options.fork = true
+    options.compilerArgs += ['-proc:none']
+}
+
+tasks.named('processResources', ProcessResources) {
+    def metadata = [mod_id: mod_id, mod_name: mod_name, mod_version: mod_version,
+                    mod_authors: mod_authors, mod_license: mod_license]
+    inputs.properties metadata
+    filesMatching('META-INF/neoforge.mods.toml') { expand metadata }
+    exclude '**/.DS_Store'
+}
+
+tasks.named('jar', Jar) {
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+    manifest.attributes('Implementation-Title': mod_name,
+            'Implementation-Version': mod_version,
+            'Implementation-Vendor': mod_authors)
+}
+
+// Native GameTests execute through runGameTestServer rather than JUnit discovery.
+tasks.named('test', Test) { failOnNoDiscoveredTests = false }
+
+tasks.named('runGameTestServer') {
+    doFirst {
+        def worldName = providers.gradleProperty('verificationWorld').getOrElse('cwi-worldgen-verification')
+        if (!(worldName ==~ /[a-zA-Z0-9_-]+/)) throw new GradleException('verificationWorld must be a simple directory name')
+        if (verificationRunName != 'game-test-run') {
+            // Copy only prepared inputs, never another verification world's chunks or logs.
+            copy {
+                from file('build/game-test-run')
+                into verificationRunDirectory
+                include 'kubejs/startup_scripts/**', 'kubejs/server_scripts/**', 'kubejs/data/**',
+                        'config/**', 'defaultconfigs/**', 'server.properties'
+            }
+        }
+        delete new File(verificationRunDirectory, worldName)
+        ext.verificationStartedAt = System.currentTimeMillis()
+    }
+    doLast {
+        def resultLog = new File(verificationRunDirectory, 'logs/latest.log')
+        if (!resultLog.isFile() || resultLog.lastModified() < verificationStartedAt
+                || !(resultLog.text =~ /All [1-9][0-9]* required tests passed/).find()) {
+            throw new GradleException("Native worldgen verification did not finish successfully. See ${resultLog}.")
+        }
+    }
+}
+
+idea.module {
+    downloadSources = true
+    downloadJavadoc = true
+}

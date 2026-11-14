@@ -1,0 +1,37 @@
+{
+  "feature": "cwi:natures/ash_log",
+  "placement": [
+    {
+      "type": "cwi_worldgen:scenery_district",
+      "salt": 156791,
+      "profiles": [
+        {
+          "biome": "cwi:forsaken_land",
+          "chance": 0.48,
+          "min_groups": 1,
+          "max_groups": 2,
+          "min_members": 1,
+          "max_members": 2,
+          "radius": 3
+        },
+        {
+          "biome": "cwi:smoldering_barren",
+          "chance": 0.28,
+          "min_groups": 1,
+          "max_groups": 2,
+          "min_members": 1,
+          "max_members": 2,
+          "radius": 2
+        }
+      ],
+      "scattered": true
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

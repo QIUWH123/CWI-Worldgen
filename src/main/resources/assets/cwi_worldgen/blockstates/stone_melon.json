@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cwi_worldgen:block/stone_melon"
+    }
+  }
+}

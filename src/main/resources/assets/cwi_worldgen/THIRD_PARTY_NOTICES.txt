@@ -1,0 +1,12 @@
+Scoped local port of resources required by CWI world generation and structures.
+
+Darker Depths 2.1.5: Naterbobber, Blackgear, Toxteer, Orcinus. Source META-INF/mods.toml: All Rights Reserved.
+Geode Plus 1.2.5: YeoXuHang. Source META-INF/mods.toml: Attribution-NonCommercial-ShareAlike 3.0 Unported. https://creativecommons.org/licenses/by-nc-sa/3.0/
+Ad Astra 1.15.21: Alex Nijjar. Source META-INF/mods.toml: Terrarium License.
+TFMG: source textures retained from the author's original local modpack instance.
+
+Resources are copied individually, with resource IDs rewritten into cwi_worldgen; original authors retain their rights. The original pack's KubeJS resource overrides take precedence where present. This inventory does not grant redistribution rights.
+
+Create layered ore algorithm/schema: Copyright The Create Team / The Creators of Create, MIT License. See CREATE_CODE_LICENSE.txt. No Create assets are copied.
+
+Supplied terrain engine: original namespace com.onehumanawa.cfhcore.content.worldgen, from the author-provided worldgen.zip (SHA-256 d8f0166e2466415b5593edcc00d178498aac9f64a276ca0d60042238b8c56484). Source contains TerraForged provenance labels. The archive includes no license or notice file. CWI adapts the terrain math and private runtime integration; it does not claim authorship of the original algorithms. Development provenance and per-file hashes are recorded in migration/terrain_reference/SOURCE_MANIFEST.json.

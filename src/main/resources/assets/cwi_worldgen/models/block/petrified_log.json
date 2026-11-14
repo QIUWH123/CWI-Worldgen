@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cwi_worldgen:block/petrified_log_top",
+    "side": "cwi_worldgen:block/petrified_log"
+  },
+  "render_type": "minecraft:cutout"
+}

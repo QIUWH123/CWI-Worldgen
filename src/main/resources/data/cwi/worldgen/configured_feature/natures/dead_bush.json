@@ -1,0 +1,12 @@
+{
+  "type": "cwi_worldgen:safe_deadwood",
+  "config": {
+    "state": {
+      "Name": "minecraft:dead_bush"
+    },
+    "kind": "cover",
+    "min_size": 1,
+    "max_size": 1,
+    "fork": false
+  }
+}

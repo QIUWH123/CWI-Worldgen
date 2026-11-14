@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "cwi_worldgen:budding_echo",
+    "cwi_worldgen:budding_nether_quartz",
+    "cwi_worldgen:crystal_melon",
+    "cwi_worldgen:dead_living_crystal",
+    "cwi_worldgen:echo_crystal",
+    "cwi_worldgen:echo_crystal_block",
+    "cwi_worldgen:iron_plateblock",
+    "cwi_worldgen:iron_plating",
+    "cwi_worldgen:large_echo_bud",
+    "cwi_worldgen:large_nether_quartz_bud",
+    "cwi_worldgen:living_crystal",
+    "cwi_worldgen:magma_pad",
+    "cwi_worldgen:marked_iron_pillar",
+    "cwi_worldgen:medium_echo_bud",
+    "cwi_worldgen:medium_nether_quartz_bud",
+    "cwi_worldgen:nether_quartz_crystal",
+    "cwi_worldgen:nether_quartz_crystal_block",
+    "cwi_worldgen:slag_bricks_slab",
+    "cwi_worldgen:small_echo_bud",
+    "cwi_worldgen:small_nether_quartz_bud",
+    "cwi_worldgen:small_white_industrial_lamp",
+    "cwi_worldgen:steel_plateblock",
+    "cwi_worldgen:stone_melon"
+  ]
+}

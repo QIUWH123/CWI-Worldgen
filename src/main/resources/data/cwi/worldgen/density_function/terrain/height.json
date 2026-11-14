@@ -1,0 +1,5 @@
+{
+  "type": "cwi_worldgen:reference_terrain",
+  "field": "height",
+  "generation_version": 22
+}

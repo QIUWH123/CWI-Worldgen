@@ -1,0 +1,28 @@
+{
+  "feature": "cwi:structures/lava_lake_granite",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 100
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "cwi_worldgen:hazard_district",
+      "noise": "cwi:districts",
+      "min_noise": 0.05,
+      "max_noise": 2,
+      "min_y": 45,
+      "max_y": 160,
+      "max_slope": 12
+    }
+  ]
+}

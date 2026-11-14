@@ -1,0 +1,129 @@
+{
+  "carvers": {
+    "air": [
+      "cwi_worldgen:duskrock_carver",
+      "cwi:typical_caves",
+      "cwi:typical_caves_deep",
+      "cwi:typical_caves_ravine",
+      "cwi:sandy_caves",
+      "cwi:sandy_caves_deep",
+      "cwi:sandy_caves_ravine",
+      "cwi:glowshroom_caves",
+      "cwi:glowshroom_caves_deep",
+      "cwi:glowshroom_caves_ravine",
+      "cwi:dripstone_caves",
+      "cwi:dripstone_caves_deep",
+      "cwi:dripstone_caves_ravine",
+      "cwi:molten_caves",
+      "cwi:molten_caves_deep",
+      "cwi:molten_caves_ravine",
+      "cwi:echo_caves",
+      "cwi:echo_caves_deep",
+      "cwi:echo_caves_ravine",
+      "cwi:spider_caves",
+      "cwi:spider_caves_deep",
+      "cwi:spider_caves_ravine",
+      "cwi:deep_ocean",
+      "cwi:deep_ocean_deep",
+      "cwi:deep_ocean_ravine"
+    ]
+  },
+  "downfall": 0.5,
+  "effects": {
+    "grass_color": 11976546,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": false,
+      "sound": "minecraft:music.overworld.dripstone_caves"
+    },
+    "fog_color": -5399162,
+    "sky_color": -7964315,
+    "water_color": -15194846,
+    "water_fog_color": -16248305
+  },
+  "features": [
+    [],
+    [
+      "cwi:structures/lava_lake_granite_underground",
+      "cwi:structures/lava_lake_granite_surface",
+      "cwi:structures/lava_lake_basalt_underground",
+      "cwi:structures/lava_lake_basalt_surface",
+      "cwi:surfaces/arid_surface",
+      "cwi_worldgen:catacombs_lava_lining",
+      "cwi:stones/eruptive_bedrock"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      "cwi_worldgen:duskrock_ore",
+      "minecraft:underwater_magma",
+      "cwi:disks/claystone",
+      "cwi:striated_ores/sandy_caves/claystone",
+      "cwi:striated_ores/sandy_caves/lignite",
+      "cwi:striated_ores/sandy_caves/bauxite",
+      "cwi:striated_ores/sandy_caves/magnesite",
+      "cwi:striated_ores/sandy_caves/hematite",
+      "cwi:industrial/magnesite",
+      "cwi:industrial/halite",
+      "cwi:industrial/rutile",
+      "cwi:industrial/hematite",
+      "cwi:industrial/lignite",
+      "cwi:industrial/bauxite"
+    ],
+    [],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
+    ],
+    [
+      "cwi:ores/zinc",
+      "cwi:ores/copper",
+      "cwi:ores/coal",
+      "cwi:ores/gold",
+      "cwi:ores/iron",
+      "cwi:ores/nickel",
+      "cwi:ores/lead",
+      "cwi:ores/lithium",
+      "cwi:ores/redstone",
+      "cwi:ores/lapis",
+      "cwi:ores/diamond",
+      "cwi:ores/quartz",
+      "cwi:ores/sulfur",
+      "cwi:ores/tin",
+      "cwi:ores/silver",
+      "cwi:ores/emerald",
+      "cwi:structures/claystone_biological_sediment",
+      "minecraft:glow_lichen",
+      "cwi_worldgen:patch_cave_carrots",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "cwi_worldgen:amber",
+      "cwi_worldgen:petrified_branch",
+      "cwi_worldgen:petrified_roots",
+      "cwi_worldgen:arid_vegetation"
+    ],
+    []
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.5
+}

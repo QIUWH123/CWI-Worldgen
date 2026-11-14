@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "cwi_worldgen:glowshroom_block",
+    "cwi_worldgen:glowshroom_heart",
+    "cwi_worldgen:glowshroom_stem",
+    "cwi_worldgen:scorched_remains",
+    "cwi_worldgen:scorched_remains_block"
+  ]
+}

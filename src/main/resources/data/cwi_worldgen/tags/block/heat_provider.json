@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "#cwi_worldgen:very_high_heat",
+      "required": false
+    },
+    {
+      "id": "#cwi_worldgen:high_heat",
+      "required": false
+    },
+    {
+      "id": "#cwi_worldgen:medium_heat",
+      "required": false
+    },
+    {
+      "id": "#cwi_worldgen:low_heat",
+      "required": false
+    }
+  ]
+}

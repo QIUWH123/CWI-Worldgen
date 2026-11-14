@@ -1,0 +1,17 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "cwi:forsaken_land",
+    "cwi:smoldering_barren",
+    "cwi:deep_ocean",
+    "cwi:typical_caves",
+    "cwi:sandy_caves",
+    "cwi:glowshroom_caves",
+    "cwi:dripstone_caves",
+    "cwi:spider_caves",
+    "cwi:molten_caves",
+    "cwi:echo_caves"
+  ],
+  "features": "cwi:terrain_surface_cleanup",
+  "step": "top_layer_modification"
+}

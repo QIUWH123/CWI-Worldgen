@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "cwi_worldgen:budding_nether_quartz",
+    "cwi_worldgen:dead_living_crystal",
+    "cwi_worldgen:large_nether_quartz_bud",
+    "cwi_worldgen:living_crystal",
+    "cwi_worldgen:medium_nether_quartz_bud",
+    "cwi_worldgen:nether_quartz_crystal",
+    "cwi_worldgen:nether_quartz_crystal_block",
+    "cwi_worldgen:slag_bricks_slab",
+    "cwi_worldgen:small_nether_quartz_bud",
+    "cwi_worldgen:stone_melon"
+  ]
+}

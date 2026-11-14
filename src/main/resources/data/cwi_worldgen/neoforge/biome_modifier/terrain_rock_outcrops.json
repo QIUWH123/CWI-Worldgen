@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "cwi:forsaken_land",
+    "cwi:smoldering_barren"
+  ],
+  "features": [
+    "cwi:terrain_surface_exposure",
+    "cwi:terrain_rock_outcrops"
+  ],
+  "step": "raw_generation"
+}

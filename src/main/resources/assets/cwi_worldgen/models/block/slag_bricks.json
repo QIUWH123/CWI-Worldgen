@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cwi_worldgen:block/slag_bricks"
+  },
+  "render_type": "minecraft:cutout"
+}

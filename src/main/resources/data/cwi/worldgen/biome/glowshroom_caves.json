@@ -1,0 +1,120 @@
+{
+  "carvers": {
+    "air": [
+      "cwi:typical_caves",
+      "cwi:typical_caves_deep",
+      "cwi:typical_caves_ravine",
+      "cwi:sandy_caves",
+      "cwi:sandy_caves_deep",
+      "cwi:sandy_caves_ravine",
+      "cwi:glowshroom_caves",
+      "cwi:glowshroom_caves_deep",
+      "cwi:glowshroom_caves_ravine",
+      "cwi:dripstone_caves",
+      "cwi:dripstone_caves_deep",
+      "cwi:dripstone_caves_ravine",
+      "cwi:molten_caves",
+      "cwi:molten_caves_deep",
+      "cwi:molten_caves_ravine",
+      "cwi:echo_caves",
+      "cwi:echo_caves_deep",
+      "cwi:echo_caves_ravine",
+      "cwi:spider_caves",
+      "cwi:spider_caves_deep",
+      "cwi:spider_caves_ravine",
+      "cwi:deep_ocean",
+      "cwi:deep_ocean_deep",
+      "cwi:deep_ocean_ravine"
+    ]
+  },
+  "downfall": 0.5,
+  "effects": {
+    "grass_color": 5478752,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": false,
+      "sound": "minecraft:music.overworld.dripstone_caves"
+    },
+    "fog_color": 8103167,
+    "sky_color": 8103167,
+    "water_color": -15194846,
+    "water_fog_color": -16248305
+  },
+  "features": [
+    [],
+    [
+      "cwi:structures/acid_lake_underground",
+      "cwi:structures/acid_lake_surface",
+      "cwi:structures/alkaline_lake_underground",
+      "cwi:structures/alkaline_lake_surface",
+      "cwi:surfaces/grime_surface"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:ore_tuff",
+      "minecraft:underwater_magma",
+      "cwi:striated_ores/glowshroom_caves/gneiss",
+      "cwi:striated_ores/glowshroom_caves/malachite",
+      "cwi:striated_ores/glowshroom_caves/cassiterite",
+      "cwi:striated_ores/glowshroom_caves/azurite",
+      "cwi:industrial/cassiterite",
+      "cwi:industrial/cooperite",
+      "cwi:industrial/azurite",
+      "cwi:industrial/malachite"
+    ],
+    [
+      "cwi:ores/zinc",
+      "cwi:ores/copper",
+      "cwi:ores/coal",
+      "cwi:ores/gold",
+      "cwi:ores/iron",
+      "cwi:ores/nickel",
+      "cwi:ores/lead",
+      "cwi:ores/lithium",
+      "cwi:ores/redstone",
+      "cwi:ores/lapis",
+      "cwi:ores/diamond",
+      "cwi:ores/quartz",
+      "cwi:ores/sulfur",
+      "cwi:ores/tin",
+      "cwi:ores/silver",
+      "cwi:ores/emerald"
+    ],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
+    ],
+    [
+      "cwi:structures/crystalized_phyllite",
+      "minecraft:glow_lichen",
+      "cwi_worldgen:patch_cave_carrots",
+      "cwi_worldgen:glimmering_vines",
+      "cwi_worldgen:huge_glowshroom"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.5
+}

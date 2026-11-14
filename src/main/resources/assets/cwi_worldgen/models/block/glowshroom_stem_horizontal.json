@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "cwi_worldgen:block/glowshroom_stem_top",
+    "side": "cwi_worldgen:block/glowshroom_stem"
+  },
+  "render_type": "minecraft:cutout"
+}

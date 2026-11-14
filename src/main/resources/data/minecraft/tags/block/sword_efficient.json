@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "cwi_worldgen:dry_sprouts",
+    "cwi_worldgen:glimmering_vine_plant",
+    "cwi_worldgen:glimmering_vines",
+    "cwi_worldgen:glowspurs",
+    "cwi_worldgen:mossy_sprouts",
+    "cwi_worldgen:scorched_remains"
+  ]
+}

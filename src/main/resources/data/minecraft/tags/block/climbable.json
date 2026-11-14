@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "cwi_worldgen:glimmering_vine_plant",
+    "cwi_worldgen:glimmering_vines",
+    "cwi:reinforced_rope"
+  ]
+}

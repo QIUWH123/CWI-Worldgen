@@ -1,0 +1,55 @@
+{
+  "type": "cwi_worldgen:industrial_deposit",
+  "config": {
+    "replaceable": "minecraft:base_stone_overworld",
+    "radius_x": 7,
+    "radius_y": 12,
+    "radius_z": 7,
+    "ore_fraction": 0.028,
+    "surface_indicators": true,
+    "morphologies": [
+      "massive",
+      "nodular"
+    ],
+    "size_settings": {
+      "enabled": true,
+      "favored_biomes": [
+        "cwi:echo_caves"
+      ]
+    },
+    "hosts": [
+      {
+        "state": {
+          "Name": "kubejs:cooperite"
+        },
+        "weight": 4
+      },
+      {
+        "state": {
+          "Name": "minecraft:tuff"
+        },
+        "weight": 2
+      },
+      {
+        "state": {
+          "Name": "kubejs:schist"
+        },
+        "weight": 2
+      },
+      {
+        "state": {
+          "Name": "kubejs:gneiss"
+        },
+        "weight": 2
+      }
+    ],
+    "ores": [
+      {
+        "state": {
+          "Name": "kubejs:cooperite_deposit"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

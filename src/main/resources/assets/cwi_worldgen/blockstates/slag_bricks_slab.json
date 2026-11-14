@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cwi_worldgen:block/slag_bricks_bottom"
+    },
+    "type=double": {
+      "model": "cwi_worldgen:block/slag_bricks"
+    },
+    "type=top": {
+      "model": "cwi_worldgen:block/slag_bricks_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "part=top": {
+      "model": "cwi_worldgen:block/rope_hook"
+    },
+    "part=middle": {
+      "model": "cwi_worldgen:block/rope"
+    },
+    "part=bottom": {
+      "model": "cwi_worldgen:block/rope_knot"
+    }
+  }
+}

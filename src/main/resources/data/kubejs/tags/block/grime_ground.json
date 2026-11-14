@@ -1,0 +1,9 @@
+{
+  "values": [
+    "kubejs:phyllite",
+    "kubejs:mossy_phyllite",
+    "#minecraft:base_stone_overworld",
+    "#minecraft:stone_ore_replaceables",
+    "#minecraft:deepslate_ore_replaceables"
+  ]
+}

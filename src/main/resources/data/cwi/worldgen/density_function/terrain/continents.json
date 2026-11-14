@@ -1,0 +1,5 @@
+{
+  "type": "cwi_worldgen:reference_terrain",
+  "field": "continent",
+  "generation_version": 22
+}

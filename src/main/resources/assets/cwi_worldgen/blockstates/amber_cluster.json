@@ -1,0 +1,29 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "cwi_worldgen:block/amber_cluster",
+      "x": 180
+    },
+    "facing=up": {
+      "model": "cwi_worldgen:block/amber_cluster"
+    },
+    "facing=west": {
+      "model": "cwi_worldgen:block/amber_cluster",
+      "x": 90,
+      "y": 270
+    },
+    "facing=east": {
+      "model": "cwi_worldgen:block/amber_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cwi_worldgen:block/amber_cluster",
+      "x": 270
+    },
+    "facing=north": {
+      "model": "cwi_worldgen:block/amber_cluster",
+      "x": 90
+    }
+  }
+}

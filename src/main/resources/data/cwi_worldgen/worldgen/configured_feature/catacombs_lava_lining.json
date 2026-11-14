@@ -1,0 +1,22 @@
+{
+  "type": "cwi_worldgen:catacombs_lava_lining",
+  "config": {
+    "palette": {
+      "aridrock": {
+        "Name": "kubejs:quartzite"
+      },
+      "arid_deepslate": {
+        "Name": "kubejs:quartzite_deepslate"
+      },
+      "duskrock": {
+        "Name": "kubejs:conglomerate"
+      },
+      "darkslate": {
+        "Name": "kubejs:darkslate"
+      },
+      "dry_sprouts": {
+        "Name": "cwi_worldgen:dry_sprouts"
+      }
+    }
+  }
+}

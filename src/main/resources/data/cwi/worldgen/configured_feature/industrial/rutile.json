@@ -1,0 +1,49 @@
+{
+  "type": "cwi_worldgen:industrial_deposit",
+  "config": {
+    "replaceable": "minecraft:base_stone_overworld",
+    "radius_x": 7,
+    "radius_y": 12,
+    "radius_z": 7,
+    "ore_fraction": 0.028,
+    "surface_indicators": true,
+    "morphologies": [
+      "crystalline",
+      "massive"
+    ],
+    "size_settings": {
+      "enabled": true,
+      "favored_biomes": [
+        "cwi:echo_caves"
+      ]
+    },
+    "hosts": [
+      {
+        "state": {
+          "Name": "kubejs:rutile"
+        },
+        "weight": 4
+      },
+      {
+        "state": {
+          "Name": "kubejs:quartzite"
+        },
+        "weight": 2
+      },
+      {
+        "state": {
+          "Name": "kubejs:gneiss"
+        },
+        "weight": 2
+      }
+    ],
+    "ores": [
+      {
+        "state": {
+          "Name": "kubejs:rutile_deposit"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "cwi_worldgen:safe_deadwood",
+  "config": {
+    "state": {
+      "Name": "kubejs:ash_log"
+    },
+    "kind": "fallen",
+    "min_size": 4,
+    "max_size": 6,
+    "fork": false
+  }
+}

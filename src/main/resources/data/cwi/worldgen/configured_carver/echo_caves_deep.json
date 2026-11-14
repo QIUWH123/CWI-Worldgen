@@ -1,0 +1,42 @@
+{
+  "type": "cwi_worldgen:biome_cave",
+  "config": {
+    "biome": "cwi:echo_caves",
+    "settings": {
+      "probability": 0.0585,
+      "y": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": -56
+        },
+        "max_inclusive": {
+          "absolute": -8
+        }
+      },
+      "yScale": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 0.4,
+        "max_exclusive": 0.9
+      },
+      "lava_level": {
+        "above_bottom": 8
+      },
+      "replaceable": "#minecraft:overworld_carver_replaceables",
+      "horizontal_radius_multiplier": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1.2,
+        "max_exclusive": 1.8
+      },
+      "vertical_radius_multiplier": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1.2,
+        "max_exclusive": 1.6
+      },
+      "floor_level": {
+        "type": "minecraft:uniform",
+        "min_inclusive": -1.0,
+        "max_exclusive": -0.7
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "cwi_worldgen:petrified_branch",
+  "config": {
+    "palette": {
+      "petrified_log": {
+        "Name": "cwi:petrified_log"
+      },
+      "porous_petrified_log": {
+        "Name": "cwi:porous_petrified_log"
+      },
+      "petrified_roots_plant": {
+        "Name": "cwi:petrified_roots_plant"
+      },
+      "petrified_roots": {
+        "Name": "cwi:petrified_roots"
+      },
+      "amber_cluster": {
+        "Name": "cwi:amber_cluster"
+      }
+    },
+    "settings": {
+      "maxLength": 16,
+      "minLength": 8
+    }
+  }
+}

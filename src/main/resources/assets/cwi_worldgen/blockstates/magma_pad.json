@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "cwi_worldgen:block/magma_pad",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "cwi_worldgen:block/magma_pad",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "cwi_worldgen:block/magma_pad"
+    },
+    "facing=south": {
+      "model": "cwi_worldgen:block/magma_pad",
+      "y": 180
+    }
+  }
+}

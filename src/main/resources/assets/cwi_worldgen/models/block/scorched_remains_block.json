@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cwi_worldgen:block/scorched_remains_block"
+  },
+  "render_type": "minecraft:cutout"
+}
