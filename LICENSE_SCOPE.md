@@ -20,7 +20,7 @@ Java paths in this section are relative to
 | Create | `feature/LayeredDepositFeature.java`, `feature/LayeredDepositConfiguration.java` | MIT; preserve the bundled Create notice. |
 | Darker Depths 2.1.5 | Files listed below | Upstream 1.20.1 source includes CC BY-NC 3.0; the older JAR metadata still says All Rights Reserved. Preserve attribution, identify changes and comply with the noncommercial restriction. |
 | Geode Plus 1.2.5 | `feature/geode/GeodeFeature.java`, `feature/geode/CrystalSpikeFeature.java`, `feature/geode/EchoCrystalSpikeFeature.java`, `feature/geode/config/GeodeCrystalSpikeConfig.java` | CC BY-NC-SA 3.0, including its attribution, noncommercial and share-alike conditions. |
-| Supplied terrain engine | `terrain/reference/**` | No license was included in the supplied archive. TerraForged provenance labels do not establish a license grant. |
+| Supplied terrain engine | `terrain/reference/**` and source-derived integration, including `terrain/ReferenceSpawnFinder.java` and `terrain/ReferenceRiverGasket.java` | No license was included in the supplied archive. TerraForged provenance labels do not establish a license grant. |
 
 Darker Depths adaptations:
 
@@ -44,7 +44,9 @@ feature/SmallBoulderFeature.java
 
 `block/FamilyBuddingBlock.java` follows Geode Plus crystal-growth behavior. Its
 implementation provenance remains under review; it is excluded from the
-original-code-only grant until that review is resolved.
+original-code-only grant until that review is resolved. The modern spike helper,
+`feature/geode/CrystalSpikePlacement.java`, also needs its derivation reviewed
+before being classified as wholly original; it is excluded pending that review.
 
 The geode implementation also follows vanilla Minecraft's geode algorithm.
 The adaptation notice records the source used for this port; it does not claim
