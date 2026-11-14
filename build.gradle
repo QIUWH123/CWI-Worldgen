@@ -86,6 +86,9 @@ tasks.named('processResources', ProcessResources) {
 tasks.named('jar', Jar) {
     preserveFileTimestamps = false
     reproducibleFileOrder = true
+    from('LICENSE')
+    from('LICENSE_SCOPE.md')
+    from('LICENSES') { into 'LICENSES' }
     manifest.attributes('Implementation-Title': mod_name,
             'Implementation-Version': mod_version,
             'Implementation-Vendor': mod_authors)

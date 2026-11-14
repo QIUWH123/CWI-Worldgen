@@ -1,51 +1,68 @@
 # CWI Worldgen
 
-CWI Worldgen generates the wasteland Overworld for Create Wasteland Industry
-on Minecraft 1.21.1 and NeoForge 21.1.264. This repository contains the active
-Worldgen source, including the classic terrain style, compact mountain ranges,
-watershed rivers, local landforms, caves, geology and asynchronous locate commands.
-The mod ID is `cwi_worldgen`; worldgen resources retain their canonical `cwi:` IDs.
+CWI Worldgen generates the wasteland Overworld for **Create Wasteland Industry**
+on Minecraft 1.21.1 / NeoForge. It is a companion to the CWI modpack and requires
+its registered blocks, assets and authored structures.
 
-Version **0.3.21.15** prevents ash-dirt patches from replacing stone. Patches still
-generate on normal and ashen depleted dirt. New worlds use saved generation
-profile **22**, introduced in 0.3.21.14 with smaller mountain ranges, reduced
-mountain relief and corrected dry river-bank fill. Individual mountain source
-wavelengths retain their profile-21 settings. Standing ash and burnt trees are
-sparser and require depleted soil in profiles 21 and 22.
+## Features
 
-Existing worlds retain their serialized terrain profiles. The ash-dirt material
-fix applies to newly generated chunks in all profiles; updating the mod does not
-rewrite existing chunks. Use a fresh world to select profile 22 from an older
-profile. Install only one Worldgen JAR and restart Minecraft after replacing it.
+- Wasteland terrain with compact mountain ranges, local landforms, caves and
+  mineral deposits.
+- Rivers, valleys, lakes and ponds, with water currents that move boats,
+  creatures and dropped items.
+- Sparse ash and burnt trees rooted in depleted soil. Ash-dirt patches preserve
+  stone and replace only normal or ashen depleted dirt.
+- Background searches for landforms, biomes and structures through `/locate`.
+- Configurable current strength and flowing-water audio.
 
-This is a companion to the CWI pack. CWI Core, KubeJS, Create and the other
-dependencies declared in [loader metadata](src/main/resources/META-INF/neoforge.mods.toml)
-are required at runtime. The pack supplies its own registered blocks, assets and
-authored structures. These external dependencies and pack files are not bundled
-in this source repository. This mod is not a standalone replacement for that
-content.
+## Usage
 
-Build with Java 21 and the included Gradle wrapper:
+Install one CWI Worldgen JAR alongside the required CWI pack content, then restart
+Minecraft. Select **CWI Wasteland** when creating a world. Dedicated servers use
+`level-type=cwi_worldgen:wasteland`.
 
-```sh
-./gradlew build
+Existing worlds retain their saved terrain settings, and updates do not rewrite
+generated chunks. Use a new world for the latest terrain settings.
+
+Operators can use:
+
+```text
+/locate landform <type> [range]
+/locate biome <id or #tag> [range]
+/locate structure <id or #tag> [range]
+/cwiworldgen landform list
+/cwiworldgen landform here
+/cwi_currents help
 ```
 
-The output is `build/libs/cwi_worldgen-<mod_version>.jar`; the version comes from
-`gradle.properties`. Generated runtime resources are committed. The normal build
-compiles the native test sources but does not launch Minecraft or execute
-GameTests. Native integration tests require a separately prepared CWI content
-fixture; no dependency JARs, runtime configuration or saves are included here.
+Searches default to **8192 blocks**, accept **64–32768 blocks**, and have no total
+time limit. Landform results identify confirmed sampled locations; they do not
+prove the nearest matching block. Large searches can take time, and structure
+searches may partly generate candidate chunks.
 
-Operator searches use `/locate landform <type> [range]`,
-`/locate biome <biome> [range]` and `/locate structure <structure> [range]`.
-Ranges default to 8192 blocks and accept 64–32768 blocks, with no total time
-limit. Landform results are confirmed sampled anchors, not an exhaustive proof
-of the nearest block. Some marine searches still require expensive terrain
-calculations. `/cwiworldgen landform list` and `here` list and identify landforms.
+Current settings use the normal NeoForge server and client configuration files.
+`/cwi_currents` provides operator controls for inspecting and editing current
+metadata in existing water.
 
-Source and release publication preserve the original third-party notices and
-licenses. See [third-party notices](src/main/resources/assets/cwi_worldgen/THIRD_PARTY_NOTICES.txt)
-and the [Create code license](src/main/resources/assets/cwi_worldgen/CREATE_CODE_LICENSE.txt).
-Original authors retain their rights; repository access does not grant additional
-redistribution rights.
+## Requirements
+
+- Java **21**, Minecraft **1.21.1**, and NeoForge **21.1.264 or later in 21.1**.
+- CWI Core and CWI pack content, KubeJS, Create, Applied Energistics 2,
+  Create Connected, Create Deco, Create Diesel Generators, Farmer's Delight,
+  Functional Storage, Miner's Delight, Sophisticated Backpacks and TFMG.
+
+See [loader metadata](src/main/resources/META-INF/neoforge.mods.toml) for exact
+dependency versions. Dependency JARs and external pack content are not bundled.
+
+## License
+
+Original CWI-authored code is licensed under the **GNU General Public License,
+version 3 only** (**SPDX: GPL-3.0-only**). See [LICENSE](LICENSE).
+
+Third-party code, adaptations and assets retain their own terms and attribution.
+See [LICENSE_SCOPE.md](LICENSE_SCOPE.md) and the existing
+[third-party notices](src/main/resources/assets/cwi_worldgen/THIRD_PARTY_NOTICES.txt).
+The combined source and JAR currently have unresolved third-party redistribution
+permissions; the GPL grant for original CWI code does not resolve them.
+
+Build and contribution information is in [CONTRIBUTING.md](CONTRIBUTING.md).

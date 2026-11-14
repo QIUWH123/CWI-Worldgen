@@ -1,2 +1,4 @@
 # Preserve packaged resource bytes when Git normalizes source line endings.
 src/main/resources/** -text
+# Preserve copied upstream legal text, including its whitespace.
+LICENSES/** -text -whitespace

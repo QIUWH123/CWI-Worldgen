@@ -1,5 +1,6 @@
 modLoader="javafml"
 loaderVersion="[4,)"
+# Applies to original CWI code; third-party terms are recorded in LICENSE_SCOPE.md.
 license="${mod_license}"
 
 [[mixins]]
